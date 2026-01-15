@@ -6,7 +6,7 @@
     import { dashboard } from '@/routes';
     import { type NavItem } from '@/types';
     import { Link } from '@inertiajs/svelte';
-    import { BookOpen, Folder, LayoutGrid } from 'lucide-svelte';
+    import { BookOpen, LayoutGrid } from 'lucide-svelte';
     import AppLogo from './AppLogo.svelte';
 
     const mainNavItems: NavItem[] = [
@@ -15,19 +15,24 @@
             href: '/dashboard',
             icon: LayoutGrid,
         },
+        {
+            title: 'Subjects',
+            href: '/subjects',
+            icon: BookOpen,
+        },
     ];
 
     const footerNavItems: NavItem[] = [
-        {
-            title: 'Repository',
-            href: 'https://github.com/oseughu/svelte-starter-kit',
-            icon: Folder,
-        },
-        {
-            title: 'Documentation',
-            href: 'https://laravel.com/docs/starter-kits',
-            icon: BookOpen,
-        },
+        // {
+        //     title: 'Repository',
+        //     href: 'https://github.com/oseughu/svelte-starter-kit',
+        //     icon: Folder,
+        // },
+        // {
+        //     title: 'Documentation',
+        //     href: 'https://laravel.com/docs/starter-kits',
+        //     icon: BookOpen,
+        // },
     ];
 </script>
 
