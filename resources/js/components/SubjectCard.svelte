@@ -1,5 +1,4 @@
 <script lang="ts">
-    import * as Item from '@/components/ui/item/index';
     import * as Card from '@/components/ui/card/index';
     import { Button } from '@/components/ui/button/index';
 
@@ -25,9 +24,7 @@
                     <Card.Description>{subject.description}</Card.Description>
                 </Card.Content>
                 <Card.Footer>
-                    <Item.Actions>
-                        <Button variant="default" size="sm">View</Button>
-                    </Item.Actions>
+                    <Button variant="default" size="sm">View</Button>
                 </Card.Footer>
             </Card.Root>
         {/each}
