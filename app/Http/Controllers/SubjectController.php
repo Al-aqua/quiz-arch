@@ -41,8 +41,7 @@ class SubjectController extends Controller
             'description' => $validated['description'],
         ]);
 
-        return redirect()->route('subjects')
-            ->with('success', 'Subject added successfully.');
+        return back()->with('success', 'Subject added successfully.');
     }
 
     /**

@@ -5,16 +5,10 @@
     import { Form, page } from '@inertiajs/svelte';
     import { Input } from '@/components/ui/input/index';
     import { Label } from '@/components/ui/label/index';
+    import { toast } from 'svelte-sonner';
     let errors = $derived($page.props.errors ?? {});
-    let flash = $derived($page.props.flash ?? {});
     let open = $state(false);
 </script>
-
-{#if flash?.success}
-    <div class="bg-green-100 text-green-800 p-4 rounded mb-4">
-        {flash.success}
-    </div>
-{/if}
 
 <Dialog.Root bind:open>
     <Dialog.Trigger class={buttonVariants({ variant: 'default' })}>
@@ -22,7 +16,16 @@
     </Dialog.Trigger>
 
     <Dialog.Content class="sm:max-w-106.25">
-        <Form method="post" action="/subjects" onSuccess={() => (open = false)} class="contents">
+        <Form
+            preserveScroll
+            method="post"
+            action="/subjects"
+            onSuccess={() => {
+                open = false;
+                toast.success('Subject added successfully.');
+            }}
+            class="contents"
+        >
             <Dialog.Header>
                 <Dialog.Title>Add Subject</Dialog.Title>
                 <Dialog.Description>Add a new subject.</Dialog.Description>

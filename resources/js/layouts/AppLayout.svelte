@@ -2,6 +2,7 @@
     import AppLayout from '@/layouts/app/AppSidebarLayout.svelte';
     import type { BreadcrumbItemType } from '@/types';
     import type { Snippet } from 'svelte';
+    import { Toaster } from '@/components/ui/sonner';
 
     interface Props {
         breadcrumbs?: BreadcrumbItemType[];
@@ -14,3 +15,4 @@
 <AppLayout {breadcrumbs}>
     {@render children?.()}
 </AppLayout>
+<Toaster />

@@ -9,6 +9,16 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 
+/**
+ * @property int $id
+ * @property string $name
+ * @property string $description
+ * @property string $slug
+ * @property int $user_id
+ * @property-read User $user
+ *
+ * @method static \Illuminate\Database\Eloquent\Builder|Subject create(array $attributes = [])
+ */
 class Subject extends Model
 {
     /** @use HasFactory<\Database\Factories\SubjectFactory> */
