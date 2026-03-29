@@ -23,7 +23,7 @@ class SubjectController extends Controller
             ->orderBy('created_at', 'desc')
             ->get();
 
-        return Inertia::render('Subject/index', [
+        return Inertia::render('subject/Index', [
             'subjects' => $subjects,
         ]);
     }
@@ -50,7 +50,7 @@ class SubjectController extends Controller
     {
         Gate::authorize('view', $subject);
 
-        return Inertia::render('Subject/show', [
+        return Inertia::render('subject/Show', [
             'subject' => $subject->only('id', 'name', 'description', 'slug'),
         ]);
     }
