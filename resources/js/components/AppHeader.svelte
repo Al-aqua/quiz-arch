@@ -1,7 +1,6 @@
 <script lang="ts">
     import { Link, page } from '@inertiajs/svelte';
     import BookOpen from 'lucide-svelte/icons/book-open';
-    import Folder from 'lucide-svelte/icons/folder';
     import LayoutGrid from 'lucide-svelte/icons/layout-grid';
     import Menu from 'lucide-svelte/icons/menu';
     import Search from 'lucide-svelte/icons/search';
@@ -42,9 +41,9 @@
     import { currentUrlState } from '@/lib/currentUrl.svelte';
     import { getInitials } from '@/lib/initials';
     import { toUrl } from '@/lib/utils';
+    import type { BreadcrumbItem, NavItem } from '@/types';
     import { dashboard } from '@/routes';
     import { index as subjects } from '@/routes/subjects';
-    import type { BreadcrumbItem, NavItem } from '@/types';
 
     let {
         breadcrumbs = [],

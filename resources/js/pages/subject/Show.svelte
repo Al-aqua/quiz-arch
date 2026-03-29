@@ -8,12 +8,12 @@
     import InputError from '@/components/InputError.svelte';
     import { Button, buttonVariants } from '@/components/ui/button';
     import * as Dialog from '@/components/ui/dialog/index';
+    import * as Empty from '@/components/ui/empty/index';
     import { Input } from '@/components/ui/input';
     import { Label } from '@/components/ui/label';
     import { Spinner } from '@/components/ui/spinner';
-    import { index, show, update, destroy } from '@/routes/subjects';
     import type { Subject } from '@/types';
-    import * as Empty from '@/components/ui/empty/index';
+    import { index, show, update, destroy } from '@/routes/subjects';
 
     interface Props {
         subject: Subject;

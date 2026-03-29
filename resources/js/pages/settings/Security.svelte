@@ -15,7 +15,6 @@
     import { Form } from '@inertiajs/svelte';
     import ShieldCheck from 'lucide-svelte/icons/shield-check';
     import { onDestroy } from 'svelte';
-    import SecurityController from '@/actions/App/Http/Controllers/Settings/SecurityController';
     import AppHead from '@/components/AppHead.svelte';
     import Heading from '@/components/Heading.svelte';
     import InputError from '@/components/InputError.svelte';
@@ -25,6 +24,7 @@
     import { Button } from '@/components/ui/button';
     import { Label } from '@/components/ui/label';
     import { twoFactorAuthState } from '@/lib/twoFactorAuth.svelte';
+    import SecurityController from '@/actions/App/Http/Controllers/Settings/SecurityController';
     import { disable, enable } from '@/routes/two-factor';
 
     let {

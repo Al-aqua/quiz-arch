@@ -3,9 +3,9 @@
     import { onDestroy, onMount } from 'svelte';
     import type { Snippet } from 'svelte';
     import { toast } from 'svelte-sonner';
+    import { Toaster } from '@/components/ui/sonner/index';
     import AppLayout from '@/layouts/app/AppHeaderLayout.svelte';
     import type { BreadcrumbItem } from '@/types';
-    import { Toaster } from '@/components/ui/sonner/index';
 
     let removeListener: (() => void) | undefined;
 
