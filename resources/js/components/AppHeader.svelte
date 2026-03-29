@@ -43,6 +43,7 @@
     import { getInitials } from '@/lib/initials';
     import { toUrl } from '@/lib/utils';
     import { dashboard } from '@/routes';
+    import { index as subjects } from '@/routes/subjects';
     import type { BreadcrumbItem, NavItem } from '@/types';
 
     let {
@@ -63,19 +64,24 @@
             href: dashboard(),
             icon: LayoutGrid,
         },
+        {
+            title: 'Subjects',
+            href: subjects(),
+            icon: BookOpen,
+        },
     ];
 
     const rightNavItems: NavItem[] = [
-        {
-            title: 'Repository',
-            href: 'https://github.com/laravel/svelte-starter-kit',
-            icon: Folder,
-        },
-        {
-            title: 'Documentation',
-            href: 'https://laravel.com/docs/starter-kits#svelte',
-            icon: BookOpen,
-        },
+        // {
+        //     title: 'Repository',
+        //     href: 'https://github.com/laravel/svelte-starter-kit',
+        //     icon: Folder,
+        // },
+        // {
+        //     title: 'Documentation',
+        //     href: 'https://laravel.com/docs/starter-kits#svelte',
+        //     icon: BookOpen,
+        // },
     ];
 </script>
 
