@@ -41,9 +41,9 @@
     import { currentUrlState } from '@/lib/currentUrl.svelte';
     import { getInitials } from '@/lib/initials';
     import { toUrl } from '@/lib/utils';
-    import type { BreadcrumbItem, NavItem } from '@/types';
     import { dashboard } from '@/routes';
     import { index as subjects } from '@/routes/subjects';
+    import type { BreadcrumbItem, NavItem } from '@/types';
 
     let {
         breadcrumbs = [],

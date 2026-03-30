@@ -23,8 +23,8 @@
     import * as Item from '@/components/ui/item/index';
     import { Label } from '@/components/ui/label';
     import { Spinner } from '@/components/ui/spinner';
-    import type { Subject } from '@/types';
     import { show, store } from '@/routes/subjects';
+    import type { Subject } from '@/types';
 
     interface Props {
         subjects: Array<Subject>;

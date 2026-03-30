@@ -13,6 +13,7 @@
 
 <script lang="ts">
     import { Form, page } from '@inertiajs/svelte';
+    import ProfileController from '@/actions/App/Http/Controllers/Settings/ProfileController';
     import AppHead from '@/components/AppHead.svelte';
     import DeleteUser from '@/components/DeleteUser.svelte';
     import Heading from '@/components/Heading.svelte';
@@ -21,7 +22,6 @@
     import { Button } from '@/components/ui/button';
     import { Input } from '@/components/ui/input';
     import { Label } from '@/components/ui/label';
-    import ProfileController from '@/actions/App/Http/Controllers/Settings/ProfileController';
     import { send } from '@/routes/verification';
 
     let {
