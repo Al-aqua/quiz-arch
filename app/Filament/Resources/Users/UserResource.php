@@ -24,6 +24,8 @@ class UserResource extends Resource
 
     protected static ?string $recordTitleAttribute = 'email';
 
+    protected static ?int $navigationSort = 1;
+
     public static function form(Schema $schema): Schema
     {
         return UserForm::configure($schema);
