@@ -12,8 +12,8 @@
     import { Input } from '@/components/ui/input';
     import { Label } from '@/components/ui/label';
     import { Spinner } from '@/components/ui/spinner';
-    import type { Subject } from '@/types';
     import { index, show, update, destroy } from '@/routes/subjects';
+    import type { Subject } from '@/types';
 
     interface Props {
         subject: Subject;
